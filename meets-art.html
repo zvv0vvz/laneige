@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="logo.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laneige</title>
+    <style>
+        @font-face {
+    font-family: 'Arita-dotum-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+        * {margin: 0; padding: 0; list-style: none; font-family: 'Arita-dotum-Medium';}
+        header{ width: 100%; height: 60px; border-bottom: 1px solid #ddd; position: relative;}
+        #logo { width: 130px; height: 35px; float: left; margin-left: 50px; margin-top: 13px; }
+        #icon_menu {width: 130px; height: 25px; float: right; margin-right: 60px;   margin-top: 19px;}
+        #icon_menu>li { float: left; margin-right: 20px;}
+        #icon_menu>li:nth-child(3) { margin-right: 0;}
+        #menu {width: 800px; height: 60px; line-height: 60px;  position: absolute; left: 0; right: 0; margin: auto; top: 0;text-align: center;}
+        #menu>li { display: inline-block; margin: 0 16px; font-size: 18px; font-weight: 100;   position: relative;cursor: pointer;}
+        #menu>li>.menu_line { width: 0%; height: 3px; background-color: #000; position: absolute; left: 0; right: 0; bottom: 0; margin: auto; transition: 0.3s; margin-left: 1px;}
+        #menu>li:hover>.menu_line { width: 100%; }
+        /* fl:l fl:r 사이에 가운데 배열은 pos:a로 정렬한다. */
+        /* 가운데 정렬을 고려한 옆으로 배치는 d:ib 상단 메뉴 배열은 대부분이 방식. 부모에 ta:c */
+      
+        footer { width: 100%; height: 250px;  margin-top: 90px;}
+        #footer1 { width: 100%; height: 50px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;}
+        #footer1_box { width: 1200px; height: 25px; line-height: 25px;margin: auto; margin-top: 12px;  }
+        #footer1_menu1>li {float: left; font-size: 15px; margin-right: 40px; font-weight: 100;}
+        #footer1_menu1>li:nth-child(4) { font-weight: 900;}
+        #footer1_menu1>li:last-child { margin-right: 0;}
+        #footer1_menu1 { width: 920px; height: 25px;  margin: auto; float: left; }
+        #footer1_menu2 { height: 25px; float: right;  }
+        #footer1_menu2>li { float: left;margin-right: 19px;}
+        #footer1_menu2>li:last-child { margin-right: 0;}
+        #footer2 { width: 1200px; height: 200px; margin: auto; }
+        #footer2_left { height: 120px; margin-top: 10px; float: left;}
+        #footer2_left>ul>li:after {  content: '|'; margin: 0 10px; color: #ddd;}
+        #footer2_left>ul>li:last-child:after { content: none;}
+        #footer2_left>ul>li { float: left; line-height: 60px; font-size: 15px; font-weight: 100;}
+        #footer2_left>ul>li>img { width: 75%;}
+        #footer2_left>p { font-size: 15px; font-weight: 100; letter-spacing: 1px;}
+        span { font-weight: 900;}
+        #footer2_right {  height: 40px; margin-top: 20px; float: right;}
+        #footer2_right>select { width: 260px; height: 40px; font-size: 16px; font-weight: 100;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="logo">
+            <img src="laneige-logo.svg" alt="">
+        </h1>
+        <ul id="icon_menu">
+            <li><img src="icons/header-icon_1.png" alt=""></li>
+            <li><img src="icons/header-icon_2.png" alt=""></li>
+            <li><img src="icons/header-icon_3.png" alt=""></li>
+        </ul>
+        <ul id="menu">
+            <li>브랜드 <div class="menu_line"></div></li>
+            <li>미츠 아트 <div class="menu_line"></div></li>
+            <li>베스트 & 신상품 <div class="menu_line"></div></li>
+            <li>스킨케어 <div class="menu_line"></div></li>
+            <li>메이크업 <div class="menu_line"></div></li>
+            <li>옴므 <div class="menu_line"></div></li>
+            <li>이벤트 <div class="menu_line"></div></li>
+        </ul>
+    </header>
+    <!--  -->
+   
+    <footer>
+        <div id="footer1">
+                <div id="footer1_box">
+                        <ul id="footer1_menu1">
+                            <li>회사소개</li>
+                            <li>서비스이용약관</li>
+                            <li>UGC 이용약관</li>
+                            <li>개인정보처리방침</li>
+                            <li>영상정보처리방침</li>
+                            <li>뷰티포인트</li>
+                            <li>사이트맵</li>
+                            <li>공지사항</li>
+                        </ul>
+                        <ul id="footer1_menu2">
+                            <li><img src="icons/sns_instagram_renew.png" alt=""></li>
+                            <li><img src="icons/sns_facebook_renew.png" alt=""></li>
+                            <li><img src="icons/sns_youtube_renew.png" alt=""></li>
+                            <li><img src="icons/sns_tiktok_renew.png" alt=""></li>
+                        </ul>
+                </div>
+        </div>
+        <div id="footer2">
+            <div id="footer2_left">
+                <ul>
+                    <li>고객상담실 (수신자요금부담) 080-023-5454</li>
+                <li>운영시간 : 월-금 09:00 ~ 18:00</li>
+                <li><img src="icons/wa-mark 1.png" alt=""></li>
+                </ul>
+                <p><span>© AMOREPACIFIC</span> CORPORATION. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div id="footer2_right"><select name="" id="">
+                <option value="">한국/한국어</option>
+                <option value="">INTERNATIONAL/ENGLISH</option>
+                <option value="">中国大陆/中文</option>
+                <option value="">SINGAPORE/ENGLISH</option>
+                <option value="">MALAYSIA/ENGLISH</option>
+                <option value="">ประเทศไทย/ไทย</option>
+                <option value="">VIỆT NAM/TIẾNG VIỆT</option>
+                <option value="">INDONESIA/BAHASA </option>
+                <option value="">INDONESIA</option>
+                <option value="">HONGKONG CHINA/ENGLISH</option>
+                <option value="">中國香港/繁體中文</option>
+                <option value="">UNITED STATES/ENGLISH</option>
+            </select></div>
+        </div>
+    </footer>
+</body>
+</html>
